@@ -15,5 +15,21 @@
         "@typescript-eslint"
     ],
     "rules": {
+        "import/extensions":[
+            "error",
+            "ignorePackages",
+            {
+              "ts": "never",
+              "tsx": "never"
+            }
+          ],
+        "camelcase": "off",
+        "no-unused-vars": "warn",
+        "class-methods-use-this":"off"
+    },
+    "settings": {
+        "import/resolver":{
+          "typescript": {}
+        }
     }
 }
